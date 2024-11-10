@@ -21,3 +21,4 @@ class Librarian(models.Model):
     library = models.OneToOneField(Library, on_delete=models.CASCADE)
 
 "return self.name"
+"class UserProfile(models.Model):", "Admin", "Member"
