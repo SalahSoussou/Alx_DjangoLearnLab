@@ -22,3 +22,4 @@ class Librarian(models.Model):
 
 "return self.name"
 "class UserProfile(models.Model):", "Admin", "Member"
+"class Meta", "permissions"
