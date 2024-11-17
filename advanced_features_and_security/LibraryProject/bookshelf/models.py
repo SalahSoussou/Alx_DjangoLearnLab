@@ -7,3 +7,4 @@ class Book(models.Model):
     publication_year = models.IntegerField()
 
 
+"class CustomUser(AbstractUser):", "date_of_birth", "profile_photo"
