@@ -1,8 +1,30 @@
-'''test'''
-from .views import list_books
-"LibraryDetailView", "path"
+# '''test'''
+# from .views import list_books
 
-"views.register", "LogoutView.as_view(template_name=logout.html", "LoginView.as_view(template_name=login.html"
-"views.register", "LogoutView.as_view(template_name=logout", "LoginView.as_view(template_name=login"
+# from django.contrib import admin
+# from django.urls import path
 
-"add_book/", "edit_book/", "delete_book"
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+# ]
+
+# "LibraryDetailView", "path"
+
+# "views.register", "LogoutView.as_view(template_name=logout.html", "LoginView.as_view(template_name=login.html"
+# "views.register", "LogoutView.as_view(template_name=logout", "LoginView.as_view(template_name=login"
+
+# "add_book/", "edit_book/", "delete_book"
+
+from django.urls import path
+from django.contrib.auth.views import LoginView, LogoutView
+from . import views
+
+urlpatterns = [
+    path('register/', views.register, name='register'),
+    path('login/', LoginView.as_view(template_name='login.html'), name='login'),
+    path('logout/', LogoutView.as_view(template_name='logout.html'), name='logout'),
+    path('admin-view/', views.admin_view, name='admin_view'),
+    path('librarian-view/', views.librarian_view, name='librarian_view'),
+    path('member-view/', views.member_view, name='member_view'),
+    "add_book/", "edit_book/", "delete_book"
+]
