@@ -6,3 +6,6 @@ from django.contrib.auth.forms import UserCreationForm
 def register_view(request):
     form = UserCreationForm()
     return render (request, "blog/register.html",{"form":form})
+
+
+"POST", "method", "save()"
