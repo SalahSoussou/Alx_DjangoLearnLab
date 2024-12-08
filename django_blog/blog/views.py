@@ -9,3 +9,4 @@ def register_view(request):
 
 
 "POST", "method", "save()"
+"ListView", "DetailView", "CreateView", "UpdateView", "DeleteView"
