@@ -1,18 +1,3 @@
-# from django.shortcuts import render
-# from django.contrib.auth.forms import UserCreationForm
-# # Create your views here.
-
-
-# def register_view(request):
-#     form = UserCreationForm()
-#     return render (request, "blog/register.html",{"form":form})
-
-
-# "POST", "method", "save()"
-# "ListView", "DetailView", "CreateView", "UpdateView", "DeleteView"
-
-
-
 
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import login
@@ -82,3 +67,6 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     def test_func(self):
         post = self.get_object()
         return self.request.user == post.author
+    
+
+"CommentCreateView", "CommentUpdateView", "CommentDeleteView"
