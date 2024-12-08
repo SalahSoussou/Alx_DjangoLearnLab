@@ -11,3 +11,4 @@ class CustomUserCreationForm(UserCreationForm):
 
 
 "CommentForm(forms.ModelForm)", "model = Comment", "content"
+"TagWidget()", "tags", "widgets"
