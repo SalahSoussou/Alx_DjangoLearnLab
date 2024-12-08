@@ -1,8 +1,11 @@
-{% comment %} {% extends "base.html" %} {% endcomment %} {%block title%}
-Register a New User {%endblock%} {%block content%}
-<h1>Register a New User</h1>
-<form action="/blog/register/" method="post">
-  {% csrf_token %} {{form}}
-  <button>Submit</button>
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Register</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Register</button>
 </form>
-{%endblock%}
+<p>Already have an account? <a href="{% url 'login' %}">Login here</a>.</p>
+{% endblock %}
