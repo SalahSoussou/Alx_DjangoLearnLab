@@ -80,16 +80,16 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER': 'Salah',
-#         'PASSWORD': 'alx.1999..',
-#         'HOST': 'django-blog.ctuaey8skmmf.eu-north-1.rds.amazonaws.com',
-#         'PORT': '5432'
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'Salah',
+        'PASSWORD': 'alx.1999..',
+        'HOST': 'django-blog.ctuaey8skmmf.eu-north-1.rds.amazonaws.com',
+        'PORT': '5432'
+    }
+}
 
 "taggit"
 # Password validation
