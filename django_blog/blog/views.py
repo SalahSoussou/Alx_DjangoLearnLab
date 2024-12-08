@@ -70,3 +70,4 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     
 
 "CommentCreateView", "CommentUpdateView", "CommentDeleteView"
+"Post.objects.filter", "title__icontains", "tags__name__icontains", "content__icontains"
