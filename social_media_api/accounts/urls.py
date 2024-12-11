@@ -1,7 +1,9 @@
 
-from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
+from django.contrib.auth import views as auth_views
+from . import views
+from .views import User_viwe
 urlpatterns = [
-  path('auth/', include('rest_auth.urls')),
+  path('user/', User_viwe.as_view() ),
 ]
