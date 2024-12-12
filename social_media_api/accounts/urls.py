@@ -5,5 +5,5 @@ from django.contrib.auth import views as auth_views
 from . import views
 from .views import User_viwe
 urlpatterns = [
-  path('user/', User_viwe.as_view() ),
+  path('',views.User_viwe.as_view(),name='user' ),
 ]
