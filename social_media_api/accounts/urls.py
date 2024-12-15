@@ -7,3 +7,5 @@ from . import views
 urlpatterns = [
   path('',views.User_viwe.as_view(),name='user' ),
 ]
+
+"login/", "register/"
