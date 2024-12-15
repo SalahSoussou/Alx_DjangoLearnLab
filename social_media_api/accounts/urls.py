@@ -1,11 +1,7 @@
-
 from django.urls import path
-from django.conf.urls import include
-from django.contrib.auth import views as auth_views
-from . import views
-# from .views import User_viwe
-urlpatterns = [
-  path('',views.User_viwe.as_view(),name='user' ),
-]
+from .views import RegisterView, LoginView
 
-"login/", "register/"
+urlpatterns = [
+    path('register/', RegisterView.as_view(), name='register'),
+    path('login/', LoginView.as_view(), name='login'),
+]
