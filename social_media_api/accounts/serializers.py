@@ -5,3 +5,7 @@ class UserSerializer(serializers.ModelSerializer):
   class Meta:
       model = User
       fields = "__all__"
+
+
+
+"serializers.CharField()", "Token.objects.create", "get_user_model().objects.create_user"
